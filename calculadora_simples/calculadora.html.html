@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>swtich/case</title>
+		<script type="text/javascript">
+
+			var valor1 = prompt ('Informe o valor1: ', '');
+			var valor2 = prompt ('Informe o valor2: ', '');
+			var operacao = prompt('Informe a operação: ', '');
+			var resultado = '';
+
+			if (!isNaN(valor1) && !isNaN(valor2)) {
+				valor1 = parseFloat(valor1);
+				valor2 = parseFloat(valor2);
+
+				switch(operacao){
+					case '+':
+						resultado = (valor1 + '+' + valor2 + '=' + (valor1+valor2));
+						break;
+					case '-':
+						resultado = (valor1 + '-' + valor2 + '=' + (valor1-valor2));
+						break;
+					case '*':
+						resultado = (valor1 + '*' + valor2 + '=' + (valor1*valor2));
+						break;
+					case '/':
+						resultado = (valor1 + '/' + valor2 + '=' + (valor1/valor2));
+						break;
+					default:
+						resultado = 'Digite uma operação válida';
+				}
+			}
+			else { resultado = 'Está digitando letras no lugar de números'}
+
+			alert(resultado);
+
+		</script>
+
+
+
+	</head>
+	<body>
+
+	</body>
+</html>

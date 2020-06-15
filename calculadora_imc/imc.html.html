@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Deivid Tiago Amorin</title>
+		<script type="text/javascript">
+			
+			do{
+				var peso = parseFloat(prompt('Informe seu peso: ', ''));
+				var altura = parseFloat(prompt('Informe sua altura: ', ''));
+				var imc = peso / (altura * altura);
+
+				if (imc < 18.5) {
+					alert ('seu imc é: ' + imc + ' Abaixo do peso');
+				}
+				else if (imc < 25) {
+					alert ('seu imc é: ' + imc + ' Peso nomal');
+				}
+				else if (imc < 30) {
+					alert ('seu imc é: ' + imc + ' Acima do peso');
+				}
+				else if (imc < 35) {
+					alert ('seu imc é: ' + imc + ' Obesidade I');
+				}
+				else if (imc < 40) {
+					alert ('seu imc é: ' + imc + ' Obesidade II');
+				}
+				else {
+					alert ('seu imc é: ' + imc + ' Obesidade III');
+				}
+
+				if (confirm('Deseja Continuar?')) {
+					var i = parseInt = 1;
+				}
+				else{
+					var i = parseInt = 0;
+				}
+
+			} while	(i) 
+
+		</script>
+	</head>
+<body>
+
+</body>
+</html>
