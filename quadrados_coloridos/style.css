@@ -1,0 +1,25 @@
+body{
+    background-color: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.principal{
+    width: 650pt;
+}
+
+h1,p{
+    padding: 0pt;
+    margin: 0pt;
+}
+
+div{
+    margin: auto;
+    padding: 10pt;
+    width: 550pt;
+    background-color: white
+}
+
+.quadrado{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Deivid Tiago Amorin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="principal">
+        <div class="titulo">
+            <h1>
+                Proposta do exercício:
+            </h1>
+        </div>
+        <div class="paragrafo">
+            <p>
+                Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+                vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+                aparecer na tela.
+            </p>
+            <br>
+            <p>
+                Utilizando o resultado do primeiro desafio, toda vez que o usuário passar o mouse por cima de
+                algum quadrado troque sua cor para uma cor aleatória.
+            </p>
+        </div>
+        <div>
+            <h1>
+                Resultado do exercício:
+            </h1>
+            <br>
+            <button class="botao1">
+                Clique aqui!
+            </button>
+        </div>
+        <div class="quadrado">
+        </div>
+
+    <script>
+        let elementoBotao = document.querySelector('button.botao1');
+        let contador = 1; //altera o número do id dos quadrados
+
+        //ao clicar com o mouse no botão
+        elementoBotao.onclick = function(){
+            let quadrado = document.createElement('div');
+            
+            //formatação css do elemento criado
+            quadrado.style.width = '100px';
+            quadrado.style.height = '100px';
+            quadrado.style.backgroundColor = '#f00'; //padrão em vermelho
+            quadrado.style.margin = '5px';
+            quadrado.id = "quadradoVermelho-" + contador;
+
+            //variável para pegar as informções da div
+            let elementoDiv = document.querySelector(".quadrado");
+        
+            //modar a cor do quadrado quando passa o mouse
+            quadrado.addEventListener("mouseover", () => {
+                let novaCor = corRandom();
+                quadrado.style.backgroundColor = novaCor;
+            });
+
+            //printar a div
+            elementoDiv.appendChild(quadrado);
+            contador ++;
+        }
+
+        //função que retorna uma cor randômica
+        function corRandom() {
+            var color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+            return color;
+        }
+      </script>  
+    
+
+    
+</body>
+</html>

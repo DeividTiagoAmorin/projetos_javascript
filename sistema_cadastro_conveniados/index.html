@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+	<title>Émerson e Deivid</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		label{
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Cadastro de Conveniados:</h1>
+
+		<br/>
+
+		<label for="codigo">Código:</label>
+		<input class="form-control"type="text" id="codigo">
+		
+		<br/>
+
+		<label>Nome:</label>
+		<input class="form-control"id="nome">
+		
+		<br/>
+
+		<label>Categoria:</label>
+		<select class="form-control"id="categoria">
+			<option value=""></option>
+			<option value="Individual">Individual</option>
+			<option value="Corporativo">Corporativo</option>
+		</select>
+
+		<br/>
+			
+		<label>Idade:</label>
+		<input class="form-control"id="idade">
+
+		<br/>
+
+		<label>Valor base:</label>
+		<input class="form-control"id="valorBase">
+
+	</div>
+
+
+	<div class="container">
+		<br/>
+		<button class="btn btn-success btn-primary btn-lg btn-block" id="listarConveniados">Listar conveniados</button>
+		<button class="btn btn-info btn-primary btn-lg btn-block" id="mostrarValor">Valor total</button>
+		<button class="btn btn-danger btn-primary btn-lg btn-block"id="btLimpar">Limpar lista</button>
+	</div>
+
+	<div class="container">
+		<table class="table" id="tabela"></table>
+	</div>
+
+</body>
+</html>
